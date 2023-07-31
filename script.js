@@ -15,4 +15,11 @@ const grids = document.querySelectorAll(".grid");
 
 grids.forEach((grid) => {
 	grid.style.border = "1px solid black";
+	grid.style.flexBasis = "calc(100%/16)";
+	grid.style.boxSizing = "border-box";
+	grid.style.transition = "background-color 0.5s"
+	grid.addEventListener("mouseenter", () => {
+		grid.style.backgroundColor = "black"
+	})
 })
+
