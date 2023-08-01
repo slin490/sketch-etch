@@ -33,6 +33,7 @@ const newConfig = () => {
 	// 	newGrid = Number(prompt("Enter within specified range: 16-100"));
 	// }
 	container.innerHTML = "";
+	console.log(gridAmount);
 	createGrid(gridAmount);
 	gridStyler(gridAmount);
 }
